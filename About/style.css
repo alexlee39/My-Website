@@ -16,6 +16,21 @@ body{
     background-color: var(--mainBackground);
 }
 
+.tools-wrapper{
+    display: flex;
+    gap: 0px 5%;
+}
+.tools{
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 0px 5%; */
+    font-size: 0.9em;
+    border: 2px solid #ccc;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 10px 0px;
+}
+
 /* p{
     text-indent: 1ch;
 } */
@@ -63,6 +78,15 @@ body{
     /* text-decoration: none; */
 }
 
+.resume-section a{
+    text-decoration: none;
+}
+
+.resume-section a:hover{
+    font-weight: bold;
+    color: red;
+}
+
 .about, 
 .experience,
 .other-works{
@@ -94,13 +118,14 @@ body{
    grid-area: exp;
 }
 
-.experience .exp-list{
-    padding-left: 16px;
+.experience ul{
+    padding-left: 8%;
 }
 .experience .exp-list a{
     font-size: 20px;
     text-decoration: none;
 }
+
 
 .other-works{
     grid-area: works;
