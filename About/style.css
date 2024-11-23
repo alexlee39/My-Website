@@ -1,0 +1,128 @@
+/* Vars */
+:root{
+    --mainBackground: #0C1B31;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--mainBackground);
+}
+
+/* p{
+    text-indent: 1ch;
+} */
+
+/* (Top Left) */
+.intro-about{
+    /* position: fixed; */
+    grid-area: intro;
+    /* padding: 80px 0px; */
+    /* padding-left: 80px; */
+    /* Top Right Bot Left */
+    /* margin: 150px 70px 150px 200px;  */
+}
+
+.intro-about h2{
+    padding: 20px;
+}
+
+.intro-about .small-desc{
+    margin-bottom: 60px;
+    padding: 20px 0px;
+}
+
+.intro-about .logos{
+    display: flex;
+    gap: 24px;
+    /* justify-content: space-around; */
+    padding: 20px;
+}
+
+.intro-about .table-of-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.intro-about .table-of-contents a{
+    text-decoration: none;
+}
+
+/* TODO */
+.intro-about .table-of-contents a:hover{
+    color: #fff;
+    /* text-decoration: none; */
+}
+
+.about, 
+.experience,
+.other-works{
+    /* padding: 80px 0px; */
+    /* Top Right Bot Left */
+    /* margin: 150px 200px 150px 70px;
+    padding-right: 100px; */
+}
+/* (Top Right) */
+.about{
+    font-size: 1.2em;
+    grid-area: desc;
+}
+
+.about p{
+    text-indent: 3ch;
+}
+
+/* Middle */
+.experience{
+   grid-area: exp;
+}
+
+.experience .exp-list{
+    padding-left: 16px;
+}
+.experience .exp-list a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.other-works{
+    grid-area: works;
+}
+
+
+
+.footer{
+    grid-area: footer;
+}
+
+
+/* GRID Container */
+.grid-container{
+    /* TOP/BOT LEFT/RIGHT 
+       TOP RIGHT BOT LEFT */
+    /* min-width: 1100px;     */
+    /* padding: 80px 90px; */
+    padding: 6% 12%;
+    /* TOP/BOT LEFT/RIGHT
+       TOP RIGHT BOT LEFT */
+    /* margin: 0px 320px; */
+    margin: 0% 20%;
+    display:flex;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        'intro desc desc'
+        'intro exp exp' 
+        'intro works works'
+        'footer footer footer';
+
+}
