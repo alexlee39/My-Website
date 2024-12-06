@@ -1,0 +1,52 @@
+/* (Top Left) */
+.profile{
+    /* position: fixed; */
+    grid-area: intro;
+    /* padding: 80px 0px; */
+    /* padding-left: 80px; */
+    /* Top Right Bot Left */
+    /* margin: 150px 70px 150px 200px;  */
+}
+  
+.profile h2{
+    padding: 1rem;
+}
+  
+.profile .small-desc{
+    /* margin-bottom: 10%; */
+    /* padding 20px 0px */
+    padding: 10% 0px;
+}
+  
+.profile .logos{
+    display: flex;
+    gap: 24px;
+    /* justify-content: space-around; */
+    padding: 10% 6%;
+}
+  
+.profile .table-of-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+  
+.profile .table-of-contents a{
+    text-decoration: none;
+}
+  
+  /* TODO */
+.profile .table-of-contents a:hover{
+    color: #fff;
+    /* text-decoration: none; */
+}
+  
+.resume-section a{
+    text-decoration: none;
+}
+  
+.resume-section a:hover{
+    font-weight: bold;
+    color: red;
+}
