@@ -1,0 +1,223 @@
+/* Vars */
+:root{
+  --aboutBackground: #0C1B31;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--aboutBackground);
+  min-width: 400px;
+}
+
+/* .main-wrapper{
+  background-color: var(--mainBackground);
+} */
+.tools-wrapper{
+  display: flex;
+  gap: 0px 5%;
+}
+.tools{
+  /* display: flex;
+  flex-direction: column; */
+  /* gap: 0px 5%; */
+  font-size: 0.9em;
+  border: 2px solid #ccc;
+  border-radius: 10%;
+  padding: 8px;
+  margin: 10px 0px;
+}
+
+/* p{
+  text-indent: 1ch;
+} */
+
+/* (Top Left) */
+.intro-about{
+  /* position: fixed; */
+  grid-area: intro;
+  /* padding: 80px 0px; */
+  /* padding-left: 80px; */
+  /* Top Right Bot Left */
+  /* margin: 150px 70px 150px 200px;  */
+}
+
+.intro-about h2{
+  padding: 20px;
+}
+
+.intro-about .small-desc{
+  /* margin-bottom: 10%; */
+  /* padding 20px 0px */
+  padding: 10% 0px;
+}
+
+.intro-about .logos{
+  display: flex;
+  gap: 24px;
+  /* justify-content: space-around; */
+  padding: 10% 6%;
+}
+
+.intro-about .table-of-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.intro-about .table-of-contents a{
+  text-decoration: none;
+}
+
+/* TODO */
+.intro-about .table-of-contents a:hover{
+  color: #fff;
+  /* text-decoration: none; */
+}
+
+.resume-section a{
+  text-decoration: none;
+}
+
+.resume-section a:hover{
+  font-weight: bold;
+  color: red;
+}
+
+.about, 
+.experience,
+.other-works{
+  /* padding: 80px 0px; */
+  /* Top Right Bot Left */
+  /* margin: 150px 200px 150px 70px;
+  padding-right: 100px; */
+}
+/* (Top Right) */
+.about{
+  font-size: 1.2em;
+  grid-area: desc;
+}
+
+.about p{
+  text-indent: 3ch;
+}
+
+.about ol{
+  padding: 1em;
+}
+
+.about ol li{
+  margin: 0.4em 0em;
+}
+
+.about .lang-tiers{
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* .about .languages-list{
+  padding-top: 0em;
+} */
+
+
+/* Middle */
+.experience{
+ grid-area: exp;
+}
+
+.experience ul{
+  padding-left: 8%;
+}
+.experience .exp-list a{
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+.other-works{
+  grid-area: works;
+}
+
+
+
+.footer{
+  grid-area: footer;
+}
+
+.section-title{
+  display: none;
+}
+
+/* GRID Container */
+.grid-container{
+  /* TOP/BOT LEFT/RIGHT 
+     TOP RIGHT BOT LEFT */
+  /* min-width: 1100px;     */
+  /* padding: 80px 90px; */
+  padding: 6% 8%;
+  /* TOP/BOT LEFT/RIGHT
+     TOP RIGHT BOT LEFT */
+  /* margin: 0px 320px; */
+  margin: 0% 10%;
+  /* display:flex; */
+  /* min-width: 400px; */
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+      'intro desc desc'
+      'intro exp exp' 
+      'intro works works';
+      /* 'footer footer footer'; */
+
+}
+
+
+.footer{
+  /* position:relative; */
+  left:0;
+  bottom:0;
+  border:2px solid #fff;
+  background-color: fff;
+  border-radius: 6px;
+  margin-top: 6%;
+  padding: 20px 10%;
+}
+
+.footer .copyright{
+  padding: 10%;
+}
+
+@media (max-width: 700px){
+
+  .intro-about .logos{
+      padding: 2% 0%;
+  }
+  .grid-container{
+      grid-template-areas: 
+      'intro'
+      'desc'
+      'exp'
+      'works';
+  }
+
+  .intro-about .table-of-contents{
+      padding: 20px 0px;
+  }
+
+  .about{
+      padding: 60px 0px;
+  }
+
+  .section-title{
+      display: block;
+      margin: 1.3em 0em;
+  }
+}
