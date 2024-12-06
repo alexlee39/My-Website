@@ -14,7 +14,7 @@
 body{
     min-height: 100vh;
     background-color: var(--mainBackground);
-
+    min-width: 400px;
 }
 
 /* .main-wrapper{
@@ -152,6 +152,9 @@ body{
     grid-area: footer;
 }
 
+.section-title{
+    display: none;
+}
 
 /* GRID Container */
 .grid-container{
@@ -165,6 +168,7 @@ body{
     /* margin: 0px 320px; */
     margin: 0% 10%;
     /* display:flex; */
+    /* min-width: 400px; */
     display: grid;
     gap: 20px;
     grid-template-areas: 
@@ -191,7 +195,7 @@ body{
     padding: 10%;
 }
 
-@media (max-width: 650px){
+@media (max-width: 700px){
 
     .intro-about .logos{
         padding: 2% 0%;
@@ -202,5 +206,18 @@ body{
         'desc'
         'exp'
         'works';
+    }
+
+    .intro-about .table-of-contents{
+        padding: 20px 0px;
+    }
+
+    .about{
+        padding: 60px 0px;
+    }
+
+    .section-title{
+        display: block;
+        margin: 1.3em 0em;
     }
 }
