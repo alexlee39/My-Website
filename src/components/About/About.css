@@ -1,0 +1,26 @@
+/* (Top Right) */
+.about{
+    font-size: 1.2em;
+    grid-area: desc;
+  }
+  
+  .about p{
+    text-indent: 3ch;
+  }
+  
+  .about ol{
+    padding: 1em;
+  }
+  
+  .about ol li{
+    margin: 0.4em 0em;
+  }
+  
+  .about .lang-tiers{
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  /* .about .languages-list{
+    padding-top: 0em;
+  } */

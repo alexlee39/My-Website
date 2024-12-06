@@ -1,4 +1,4 @@
-import React from 'react'
+import './About.css'
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
     <div className="lang-tiers"> My Most Proficient Tech Stack</div>
     <ol className = "langauges-list">
        <li> Java </li> 
-       <li> React </li>
+       <li> React/JS  </li>
        <li> C/C++ </li>
     </ol>
 
