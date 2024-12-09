@@ -1,26 +1,32 @@
 /* (Top Right) */
 .about{
-    font-size: 1.2em;
+    font-size: 1.1rem;
     grid-area: desc;
   }
   
-  .about p{
+.about p{
     text-indent: 3ch;
-  }
+}
   
-  .about ol{
+.about ol{
     padding: 1em;
-  }
+}
   
-  .about ol li{
+.about ol li{
     margin: 0.4em 0em;
-  }
+}
   
-  .about .lang-tiers{
+.about .lang-tiers{
     font-size: 16px;
     font-style: italic;
-  }
+}
   
   /* .about .languages-list{
     padding-top: 0em;
   } */
+
+@media (max-width: 700px){
+  .about{
+    padding: 3rem 0;
+  }
+}
