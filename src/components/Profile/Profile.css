@@ -26,10 +26,27 @@
 .profile .logos{
     display: flex;
     gap: 24px;
+    flex-grow: auto;
     /* justify-content: space-around; */
     padding: 10% 6%;
 }
   
+/* Alternatively set JSX code to have function: size{30px} */
+.profile .logos-items {
+    font-size: 40px; /* Adjust size as needed */
+    /* color: #333;     Optional: Add color */
+  }
+  
+  /* Optional to add opaqueness to hover*/
+.profile .logos-items:hover {
+    opacity: 60%;
+    /* color:black; */
+    /* font-size: 20px; Adjust size as needed */
+
+    /* color: #0077b5;  Optional: Add hover effect */
+  }
+
+
 .profile .table-of-contents{
     display: flex;
     flex-direction: column;
